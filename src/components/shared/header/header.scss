@@ -1,13 +1,20 @@
+@import '../../../pages/styles/variables.scss';
+
 .Header {
   margin: 0 auto;
   padding: 1.45rem 1.0875rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .Header__title {
   margin: 0;
+  width: 80px;
+
 }
 
 .Header__title a {
@@ -26,5 +33,11 @@
 
 a.Header__link {
   text-decoration: none;
-  color: rgba(244,230,89,1);
+  color: $od-light-purple;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  transition: all .15s linear;
+  &:hover {
+    color: adjust-hue($od-light-purple, 30);
+  }
 }

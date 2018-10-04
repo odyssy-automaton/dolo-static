@@ -8,13 +8,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'dolo',
+        short_name: 'dolo',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#c3b59b',
+        theme_color: '#5d3f97',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/dolo__avatar.jpg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
