@@ -9,14 +9,14 @@ const Header = ({ siteTitle }) => (
     <div className="Header">
       <h1 className="Header__title">
         <Link to="/">
-          <img src={doloLogo} />
+          <img src={doloLogo} alt="DOLO"/>
         </Link>
       </h1>
       <div className="Header__spacer"></div>
 
-      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://odyssy.io">About</a>
-      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://odyssy.io">Telegram</a>
-      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://odyssy.io">Prototype</a>
+      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="http://telegram.me/dolocommunity">Telegram</a>
+      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://nativeproject.one">Native</a>
+      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://odyssy.io">Odyssy</a>
     </div>
   </div>
 )
