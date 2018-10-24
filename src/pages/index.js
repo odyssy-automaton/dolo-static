@@ -17,14 +17,14 @@ const IndexPage = () => (
     <div className="block intro creamer">
       <div className="contents">
         <p>DOLO is a decentralized open learning organization, built and run by its members, iterating towards a smarter education system for all.</p>
-        <a href="http://telegram.me/dolocommunity" className="button">Join the Conversation</a>
+        <a href="https://t.me/joinchat/IJqu9w9GgBScrKbU0bCRLA" className="button">Join the Conversation</a>
       </div>
     </div>
     <div className="block documentation">
       <div className="contents">
         <img className="doloLogo" src={doloLogo} alt="DOLO" />
         <p>Feel free to view our current documentation. We will continue to iterate and publish updates as they are made available.</p>
-        <a href="https://drive.google.com/file/d/1ygCeRy5DRpL5XtzS4s0E1Vdu6YsZdrTl/view?usp=sharing" className="button large">View Documentation (v0.1)</a>
+        <a href="https://drive.google.com/file/d/1yy3T19X-Ia90Jb1F7rHwZkYPBZ73JleV/view" className="button large">View Documentation (v0.1)</a>
       </div>
     </div>
     <div className="block native creamer">
