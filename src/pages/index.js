@@ -16,7 +16,7 @@ const IndexPage = () => (
     </div>
     <div className="block intro creamer">
       <div className="contents">
-        <p>DOLO is a decentralized open learning organization, built and run by its members, iterating towards a smarter education system for all.</p>
+        <p>DOLO is a decentralized open learning organism, built and run by its members, iterating towards a smarter education system for all.</p>
         <a href="https://t.me/joinchat/IJqu9w9GgBScrKbU0bCRLA" className="button">Join the Conversation</a>
       </div>
     </div>
