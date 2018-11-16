@@ -24,18 +24,10 @@ class memberSection extends Component {
         accounts: web3Info.accounts
       });
 
-      console.log(web3Info)
-      console.log(web3Info.accounts)
       if (web3Info.accounts.length) {
         const authService = new AuthService()
 
         const storageToken = authService.checkToken();
-
-        console.log('storageToken')
-        console.log(storageToken)
-
-        // const validToken = await authService.tokenAuth(web3Info.accounts[0], storageToken);
-
 
         if (storageToken && await authService.tokenAuth(web3Info.accounts[0], storageToken)) {
           this.setState({
@@ -45,24 +37,13 @@ class memberSection extends Component {
         } else {
           const message = await authService.getMessage()
 
-          console.log(message)
-
-          // web3Info.getSignature();
-
           const sig = await web3Info.getSignature(message);
 
-          console.log(sig)
-
-          await authService.signMessage(web3Info.accounts[0], sig)
-
-          const isMember = await authService.checkDoloMembership(web3Info.accounts[0], authService.checkToken());
-
-          console.log('isMember')
-          console.log(isMember)
+          const authenticated = await authService.signMessage(web3Info.accounts[0], sig)
 
           this.setState({
             token: authService.checkToken(),
-            authenticated: isMember,
+            authenticated
           });
         }
       }
@@ -79,8 +60,9 @@ class memberSection extends Component {
     const { authenticated } = this.state;
 
     return (
-      <div>
-        <h1 className="Member">Member Lounge</h1>
+      <div className="Member">
+        <div className="Member__spacer"></div>
+        <h1>Member Lounge</h1>
         { authenticated ? 
         (
           <h2>Welcome Member!</h2>
