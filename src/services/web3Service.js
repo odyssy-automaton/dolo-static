@@ -6,9 +6,8 @@ export class Web3Info {
 
     if (alreadyInjected) {
       const provider = new ethers.providers.Web3Provider(web3.currentProvider);
-      const signer = provider.getSigner();
-
-      signer.signMessage('poopin')
+      // const signer = provider.getSigner();
+      // signer.signMessage('poopin')
 
       resolve(provider);
     } else {
@@ -39,9 +38,14 @@ export class Web3Info {
     });
   }
 
+  getSignature(msg) {
+    const signer = this.web3.getSigner();
+    return signer.signMessage(msg)
+  }
+
   async init() {
     this.web3 = this.web3 || (await this.getWeb3());
-    this.web3.listAccounts()
+    await this.web3.listAccounts()
       .then(result => {
         this.accounts = result; 
       })

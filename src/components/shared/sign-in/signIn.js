@@ -1,38 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { navigate } from 'gatsby';
 
-import { Web3Info, BrowserInfo } from '../../../util/getWeb3';
+import { BrowserInfo } from '../../../services/web3Service';
 
 import './signIn.scss'
 
 class SignIn extends Component {
   state = {
-    accounts: null,
     browserInfo: {},
-    web3Info: {},
     showBrowserMessage: false,
   };
 
   componentDidMount() {
     const browserInfo = new BrowserInfo();
-    console.log(browserInfo)
     this.setState({
       browserInfo
     });
   }
 
-  signIn = async () => {
-    try {
-      const web3Info = new Web3Info();
-      await web3Info.init();
-      this.setState({
-        web3Info
-      });
-    } catch (error) {
-      alert(
-        `Failed to load web3, accounts, or contract. Check console for details.`,
-      );
-      console.log(error);
-    }
+  enterMemberLounge = () => {
+    navigate('/member');
   }
 
   toggleMessage = () => {
@@ -51,7 +38,7 @@ class SignIn extends Component {
 
     return (
       <div onMouseEnter={this.toggleMessage} onMouseLeave={this.toggleMessage}>
-        <span onClick={this.signIn}>
+        <span onClick={this.enterMemberLounge}>
           Members Lounge
           <div className={circleClass}></div>
         </span>
