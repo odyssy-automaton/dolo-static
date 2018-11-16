@@ -1,0 +1,26 @@
+@import '../../../pages/styles/variables.scss';
+
+.Member__circle {
+  display: inline-block;
+  margin-left: 6px;
+	width: 15px;
+  height: 15px; 
+	border-radius: 50%;
+}
+
+.enabled {
+  background: $od-green;
+}
+
+.not-enabled {
+  background: $ntv-action;
+}
+
+.Member-warning {
+  position: absolute;
+  top: 62px;
+  right: 30px;
+  z-index: 100;
+  padding: 10px;
+  background: $ntv-cream;
+}
