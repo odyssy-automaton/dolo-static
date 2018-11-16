@@ -69,4 +69,25 @@ export default class AuthService {
 
     }
 
+    checkDoloMembership(userid, token) {
+        return fetch(this.apiBaseURL + '/ismember', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              userid,
+              token,
+              type: 'application/json',
+            })
+          })
+          .then(function(response) {
+              alert('is member?', response)
+              return true;
+          }).catch(function(err) {
+              alert('error', err)
+              return false;
+          })
+    }
+
 }
