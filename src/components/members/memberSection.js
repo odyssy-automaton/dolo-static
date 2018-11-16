@@ -12,6 +12,7 @@ class memberSection extends Component {
     token: null,
     web3Info: {},
     authenticated: false,
+    loading: true,
   };
 
   async componentDidMount() {
@@ -21,7 +22,8 @@ class memberSection extends Component {
 
       this.setState({
         web3Info,
-        accounts: web3Info.accounts
+        accounts: web3Info.accounts,
+        loading: true,
       });
 
       if (web3Info.accounts.length) {
@@ -33,6 +35,7 @@ class memberSection extends Component {
           this.setState({
             token: authService.checkToken(),
             authenticated: true,
+            loading: false,
           });
         } else {
           const message = await authService.getMessage()
@@ -43,7 +46,8 @@ class memberSection extends Component {
 
           this.setState({
             token: authService.checkToken(),
-            authenticated
+            authenticated,
+            loading: false,
           });
         }
       }
@@ -57,13 +61,13 @@ class memberSection extends Component {
   }
 
   render() {
-    const { authenticated } = this.state;
+    const { authenticated, loading } = this.state;
 
     return (
       <div className="Member">
         <div className="Member__container">
           <h1>Member Lounge</h1>
-          { authenticated ?
+          { authenticated && !loading ?
           (
 
               <div>
@@ -80,6 +84,8 @@ class memberSection extends Component {
 
           ) : (
             <h2>MEMBERS ONLY</h2>
+          ) : (
+            <h2>Loading...</h2>
           )}
         </div>
       </div>
