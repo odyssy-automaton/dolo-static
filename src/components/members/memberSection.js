@@ -12,6 +12,7 @@ class memberSection extends Component {
     token: null,
     web3Info: {},
     authenticated: false,
+    loading: true,
   };
 
   async componentDidMount() {
@@ -21,7 +22,8 @@ class memberSection extends Component {
 
       this.setState({
         web3Info,
-        accounts: web3Info.accounts
+        accounts: web3Info.accounts,
+        loading: true,
       });
 
       if (web3Info.accounts.length) {
@@ -33,6 +35,7 @@ class memberSection extends Component {
           this.setState({
             token: authService.checkToken(),
             authenticated: true,
+            loading: false,
           });
         } else {
           const message = await authService.getMessage()
@@ -43,7 +46,8 @@ class memberSection extends Component {
 
           this.setState({
             token: authService.checkToken(),
-            authenticated
+            authenticated,
+            loading: false,
           });
         }
       }
@@ -57,17 +61,19 @@ class memberSection extends Component {
   }
 
   render() {
-    const { authenticated } = this.state;
+    const { authenticated, loading } = this.state;
 
     return (
       <div className="Member">
         <div className="Member__spacer"></div>
         <h1>Member Lounge</h1>
-        { authenticated ? 
+        { authenticated && !loading ? 
         (
           <h2>Welcome Member!</h2>
-        ) : (
+        ) : !loading ? (
           <h2>MEMBERS ONLY</h2>
+        ) : (
+          <h2>Loading...</h2>
         )}
       </div>
     )
