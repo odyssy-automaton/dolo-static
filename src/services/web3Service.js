@@ -38,7 +38,7 @@ export class Web3Info {
     });
   }
 
-  getSignature(msg) {
+  async getSignature(msg) {
     const signer = this.web3.getSigner();
     return signer.signMessage(msg)
   }
