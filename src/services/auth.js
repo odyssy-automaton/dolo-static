@@ -1,6 +1,14 @@
 export default class AuthService {
     apiBaseURL = 'https://w65t9a9h3f.execute-api.us-east-1.amazonaws.com/latest/ethauths';
 
+    checkToken(){
+        return window.localStorage.getItem('session');
+    }
+
+    updateToken(token){
+        return window.localStorage.setItem('session', token);
+    }
+
     tokenAuth(userid, token) {
 
         return fetch(this.apiBaseURL + '/user', {
@@ -15,12 +23,16 @@ export default class AuthService {
           }),
         })
         .then(function(response) {
-            return response.json();
+            this.updateToken(response);
+            return true;
+        }).catch(function(err) {
+            alert('error', err)
+            return false;
         })
 
     }
 
-    signMessage(userid, token) {
+    getMessage() {
 
         return fetch(this.apiBaseURL + '/message', {
           method: 'GET',
@@ -29,7 +41,30 @@ export default class AuthService {
           },
         })
         .then(function(response) {
-            return response.json();
+            return response;
+        })
+
+    }
+
+    signMessage(userid, signature) {
+
+        return fetch(this.apiBaseURL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            userid,
+            signature,
+            type: 'application/json',
+          })
+        })
+        .then(function(response) {
+            this.updateToken(response);
+            return true;
+        }).catch(function(err) {
+            alert('error', err)
+            return false;
         })
 
     }
