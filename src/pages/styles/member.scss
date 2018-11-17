@@ -6,11 +6,34 @@
 }
 
 .Member {
-  padding-top: 150px;
   display: flex;
-  padding-left: 25px;
-  padding-right: 25px;
   width: 100%;
   background-color: $ntv-cream;
   min-height: 100vh;
+  .Member__container {
+    width: 100%;
+  }
+  .Member__hero {
+    background-color: $od-primary;
+    padding: 140px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    h1 {
+      text-align: center;
+      color: white;
+    }
+  }
+}
+
+.members-only {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+.loading {
+  margin: 0 auto;
+  padding: 75px 25px;
+  text-align: center;
+  max-width: 600px;
 }

@@ -1,11 +1,27 @@
-.Member {
-  padding-top: 150px;
-  display: flex;
-  padding-left: 25px;
-  padding-right: 25px;
-  width: 100%;
-}
+// baseline
+@import '../../pages/styles/variables.scss';
 
-.Member__spacer {
-  // margin-top: 100px;
+.Member__Validated {
+  .Member__Validated--hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 25px;
+    background-color: $ntv-cream-dark;
+  }
+  .Member__Contents {
+    padding: 50px 25px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    a {
+      display: block;
+      margin-bottom: 25px;
+    }
+    pre {
+      margin-bottom: 50px;
+    }
+  }
 }

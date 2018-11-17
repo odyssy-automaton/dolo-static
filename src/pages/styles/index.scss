@@ -1,15 +1,6 @@
 // baseline
 @import '/variables.scss';
 
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  line-height: 1.75em;
-}
-
 .Home__background {
   background-image: url('../../images/home__background.png');
   background-position: center center;
