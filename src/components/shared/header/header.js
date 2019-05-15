@@ -14,9 +14,9 @@ const Header = ({ siteTitle }) => (
       </h1>
       <div className="Header__spacer"></div>
 
-      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://t.me/joinchat/IJqu9w9GgBScrKbU0bCRLA">Telegram</a>
-      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://nativeproject.one">Native</a>
-      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://odyssy.io">Odyssy</a>
+      <a className="Header__link" href="#organize">Organize</a>
+      <a className="Header__link" href="#coordinate">Coordinate</a>
+      <a className="Header__link" href="#create">Create</a>
     </div>
   </div>
 )

@@ -8,34 +8,7 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 1.75em;
-}
-
-.Home__background {
-  background-image: url('../../images/home__background.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero__animation {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  .lottieControl {
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 2280px;
-    width: 105%;
-  }
+  color: #000;
 }
 
 // Typography
@@ -48,10 +21,13 @@ p {
 }
 
 a {
-  color: $ntv-action;
+  color: #000;
   text-decoration: none;
   transition: all .15s linear;
+  text-decoration: underline;
 }
+
+a.large {font-size: 1.75em;}
 
 a.button {
   display: inline-block;
@@ -81,7 +57,7 @@ a.button {
   justify-content: center;
   background-color: $ntv-cream;
   .contents {
-    max-width: 600px;
+    max-width: 1200px;
   }
   &.sky {
     background-color: $ntv-sky;
@@ -98,24 +74,68 @@ a.button {
 
 // Home page
 
+.hero {
+  .contents {
+    max-width: 900px;
+  }
+}
+
 .intro {
+  background-color: $od-yellow;
   p {
     font-size: 2.5em;
   }
 }
 
-.documentation {
-  text-align: center;
+.challenge {
+  background-color: $od-yellow;
+  h2 {
+    margin-bottom: 75px; 
+  }
+  .contents {width: 100%;}
   p {
     font-size: 1.5em;
   }
 }
 
-.native {
-  text-align: center;
-  img {
-    max-width: 280px;
+.Matrix {
+  text-align: left;
+  .Grid__Column--25:nth-child(1) {
+    background-color: rgba(255,255,255,0.25);
+    li { font-weight: 100; }
   }
+  .Grid__Column--25:nth-child(2) {
+    background-color: rgba(255,255,255,0.5);
+    li { font-weight: 300; }
+  }
+  .Grid__Column--25:nth-child(3) {
+    background-color: rgba(255,255,255,0.75);
+    li { font-weight: 500; }
+  }
+  .Grid__Column--25:nth-child(4) {
+    background-color: rgba(255,255,255,1);
+    li { font-weight: 700; }
+  }
+  .Grid__Column--25 {
+    .MatrixHeader { 
+      padding-left: 10px; padding-top: 15px; margin: 0;
+      h4 { margin: 0px 0px 5px 0px;}
+      p { margin: 0; }
+      border-bottom: 1px solid $od-yellow;
+     }
+    ul {
+    width: 100%; 
+      li {
+      border-bottom: 1px solid $od-yellow;
+      width: 100%;
+      padding-left: 10px;
+      }
+    }
+  }
+}
+
+.step--1, .step--2, .step--3 {
+  background-color: $od-yellow;
   p {
     font-size: 1.5em;
   }
@@ -128,7 +148,7 @@ a.button {
 .footer {
   min-height: 200px;
   width: 100%;
-  background-color: $od-yellow;
+  background-color: #000;
   .doloLogo {
     max-width: 60px;
   }
