@@ -17,6 +17,7 @@ const IndexPage = () => (
     <div className="block challenge">
       <div className="contents">
         <h2>Education as we know it is f***ed.</h2>
+        <h2>We need to recode.</h2>
         <div className="Grid Matrix">
           <div className="Grid__Column--25">
             <div className="MatrixHeader">
@@ -111,7 +112,8 @@ const IndexPage = () => (
     </div>
     <div className="block challenge">
       <div className="contents">
-        <h2>We aim to fix that.</h2>
+        <h2>Radical changes in society demand that we reconsider – recode – our approach to teaching and learning.</h2>
+        <p>DOLO is a call to bring together the best ideas into a Decentralized Open Learning Organism. Dolo is a place where educators and technologists come together to envision and iterate an education system, or platform, that mirrors the natural environment. What will that look like? We have no idea. That's the point. All great ideas start with Genesis.</p>
       </div>
     </div>
     <div className="block step--1" id="organize">
@@ -119,11 +121,11 @@ const IndexPage = () => (
         <div className="Grid">
           <div className="Grid__Column--50">
             <h4>Step 1.</h4>
-            <h2>Organize (Genesis)</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2>Genesis (Organize)</h2>
+            <p>You are invited to share ideas on the core values and functionality that will shape DOLO's future.</p>
             <a href="https://nativeproject.one" className="large">Join</a>
           </div>
-          <div className="Grid__Column--50"></div>
+          <div className="Grid__Column--50">&nbsp;</div>
         </div>
       </div>
     </div>
@@ -132,11 +134,11 @@ const IndexPage = () => (
         <div className="Grid">
           <div className="Grid__Column--50">
             <h4>Step 2.</h4>
-            <h2>Coordinate (Synthesis)</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2>Synthesis (Coordinate)</h2>
+            <p>An unstoppable, decentralized governance structure will guide our collective work.</p>
             <a href="https://nativeproject.one" className="large">Learn More</a>
           </div>
-          <div className="Grid__Column--50"></div>
+          <div className="Grid__Column--50">&nbsp;</div>
         </div>
       </div>
     </div>
@@ -145,18 +147,18 @@ const IndexPage = () => (
         <div className="Grid">
           <div className="Grid__Column--50">
             <h4>Step 3.</h4>
-            <h2>Create (Iteration)</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2>Emphasis (Iterate)</h2>
+            <p>A sandbox of what is real and possible will keep us moving forward. Let's share, create, code, and play.</p>
             <a href="https://nativeproject.one" className="large">Learn More</a>
           </div>
-          <div className="Grid__Column--50"></div>
+          <div className="Grid__Column--50">&nbsp;</div>
         </div>
       </div>
     </div>
     <div className="block step--3">
       <div className="contents">
-        <h2>Media</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>...</h2>
+        <p>Ongoing </p>
         <h3>Learn</h3>
         <a href="https://nativeproject.one" className="">Medium</a>
         <h3>Connect</h3>
