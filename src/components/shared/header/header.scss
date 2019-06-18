@@ -2,11 +2,11 @@
 
 .Header {
   margin: 0 auto;
-  padding: 1.45rem 1.0875rem;
+  padding: 25px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   width: 100%;
 }
@@ -14,12 +14,13 @@
 .Header__title {
   margin: 0;
   width: 80px;
-
 }
 
 .Header__title a {
   text-decoration: none;
   color: rgba(244,230,89,1);
+  img { margin-bottom: 0;}
+
 }
 
 .Header__spacer {
@@ -34,9 +35,9 @@
 a.Header__link {
   text-decoration: none;
   color: $od-light-purple;
-  text-transform: uppercase;
   letter-spacing: .1em;
   transition: all .15s linear;
+  font-weight: 700;
   &:hover {
     color: adjust-hue($od-light-purple, 30);
   }
