@@ -13,15 +13,6 @@ const IndexPage = () => (
       <div className="block hero background--image" style={{backgroundImage: 'url(' + doloBanner + ')', backgroundColor: '#fff'}}>
         <div className="contents">
           <h1>DOLO is a decentralized open learning organism, built and run by its members, iterating towards a smarter education system for all.</h1>
-          <h3>
-            Signal your support =>
-          </h3> 
-          <div className="TwitterShareButton">
-            <TwitterShareButton
-                options={{ text: 'I support a future of education that is smarter, faster, and accessible to all. Join us.', via: 'orgdolo', size: 'large' }}
-                url={'https://dolo.org'}
-            />
-          </div>
         </div>
       </div>
       <div className="block challenge">
@@ -139,7 +130,14 @@ const IndexPage = () => (
               <h2>Genesis (Organize)</h2>
               <p>We invite educators, technologists, economists, and other creators to share ideas on the core values and functionality that will shape DOLO’s future.</p>
               <p className="large"><a href="https://twitter.com/orgdolo" rel="noopener noreferrer" target="_blank">Follow DOLO</a> on Twitter</p>
-              <a href="https://t.me/joinchat/IJqu9w9GgBScrKbU0bCRLA" className="large" rel="noopener noreferrer" target="_blank">Join Public Chat</a>
+              <h4 className="Signal">
+                Signal your support
+              </h4>
+                <div className="TwitterShareButton"><TwitterShareButton
+                    options={{ text: 'I support a future of education that is smarter, faster, and accessible to all. Join us.', via: 'orgdolo', size: 'large' }}
+                    url={'https://dolo.org'}
+                />
+                </div>
             </div>
             <div className="Grid__Column--50">&nbsp;</div>
           </div>
@@ -152,8 +150,8 @@ const IndexPage = () => (
               <h4>Step 2.</h4>
               <h2>Synthesis (Coordinate)</h2>
               <p>An unstoppable decentralized governance structure will guide our work, allowing us to coordinate in new ways that foster collaboration and action.</p>
-              <p className="large">Join the DAO (rising).</p>
               <p className="large">Read <a href="https://medium.com/odyssy/how-can-decentralization-help-education-3820416030df" rel="noopener noreferrer" target="_blank">"How Can Decentralization Help Education?"</a></p>
+              <p className="large">Join the DAO (coming soon).</p>
             </div>
             <div className="Grid__Column--50">&nbsp;</div>
           </div>
@@ -166,10 +164,12 @@ const IndexPage = () => (
               <h4>Step 3.</h4>
               <h2>Iterate (Create)</h2>
               <p>A sandbox of what is real and possible will keep us moving forward. Let's share, create, code, and play.</p>
-              <h4>Educators, Thought Leaders, etc</h4>
-              <p className="large">Join the DOLO Wiki (coming soon) - Ongoing fluid communication on mission and governance</p>
-              <h4>Developers, Designers, etc</h4>
-              <p className="large">Join the DOLO Repos (coming soon) - Ongoing work on technological solutions</p>
+              <h4>Everyone</h4>
+              <p><a href="https://t.me/joinchat/IJqu9w9GgBScrKbU0bCRLA" rel="noopener noreferrer" target="_blank">Join Public Chat</a></p>
+              <h4>Educators, Thought Leaders, Economists, etc</h4>
+              <p className="large">Join the DOLO Wiki (coming soon)</p>
+              <h4>Designers, Developers, Data Scientists, etc</h4>
+              <p className="large">Contribute to DOLO Technology (coming soon)</p>
             </div>
             <div className="Grid__Column--50">&nbsp;</div>
           </div>
@@ -181,7 +181,7 @@ const IndexPage = () => (
             <div className="Grid__Column--50">
               <h4>Make Contact</h4>
               <h2>Let's build the future together</h2>
-              <p>If you're part of a project or team working on recoding the future of education, we want to help you prosper.</p>
+              <p>If you're a member of a team, community, or organization working on recoding the future of education, we would love to hear from you.</p>
               <p className="large">Say <a href="mailto:hello@dolo.org">hello@dolo.org</a></p>
             </div>
             <div className="Grid__Column--50">&nbsp;</div>
