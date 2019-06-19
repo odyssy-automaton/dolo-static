@@ -105,7 +105,7 @@ const IndexPage = () => (
                 <li>Creation</li>
                 <li>Equity</li>
                 <li>Soft Skills</li>
-                <li>AI</li>
+                <li>AI/Blockchain</li>
                 <li>Principles</li>
                 <li>Playful Gamification</li>
                 <li>Badges</li>
@@ -162,7 +162,7 @@ const IndexPage = () => (
           <div className="Grid">
             <div className="Grid__Column--50">
               <h4>Step 3.</h4>
-              <h2>Iterate (Create)</h2>
+              <h2>Iteration (Create)</h2>
               <p>A sandbox of what is real and possible will keep us moving forward. Let's share, create, code, and play.</p>
               <h4>Everyone</h4>
               <p><a href="https://t.me/joinchat/IJqu9w9GgBScrKbU0bCRLA" rel="noopener noreferrer" target="_blank">Join Public Chat</a></p>
