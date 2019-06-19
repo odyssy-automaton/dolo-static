@@ -27,7 +27,7 @@ const IndexPage = () => (
       <div className="block challenge">
         <div className="contents">
           <h2>Education as we know it is f***ed.</h2>
-          <h2>But that might not be a bad thing.</h2>
+          <h2>But there is now a way forward.</h2>
           <p>Schooling in its current form is under immense pressure to adapt to the rapid pace of knowledge, worldwide interdependence, the rate of technological change, and frustrations with quality. Further, rapid changes in our society mean that learners need a wide array of emergent skills, many of which are not fully understood or codified for learning today, much less tomorrow. The skills needed today change so fast that no education system can keep up with the constant need to reinvent how we work and live together. Therefore, schooling as a system -- conceived philosophically and operationalized through institutions and technologies -- must evolve to meet the demands of a new era where the fluid and rapid flow of information, rooted in goodness, is what matters most.</p>
           <div className="MatrixGraphic">
             <img src={MatrixGraphic} alt="Education Matrix" />
