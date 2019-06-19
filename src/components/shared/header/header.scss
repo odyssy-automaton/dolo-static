@@ -41,4 +41,7 @@ a.Header__link {
   &:hover {
     color: adjust-hue(black, 30);
   }
+  @media (max-width: $tablet){
+    display: none;
+  }
 }
