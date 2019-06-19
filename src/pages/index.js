@@ -18,7 +18,7 @@ const IndexPage = () => (
           </h3> 
           <div className="TwitterShareButton">
             <TwitterShareButton
-                options={{ text: 'I support a future of #smartereducation.', via: 'orgdolo', size: 'large' }}
+                options={{ text: 'I support a future of education that is smarter, faster, and accessible to all. Join us.', via: 'orgdolo', size: 'large' }}
                 url={'https://dolo.org'}
             />
           </div>
@@ -150,7 +150,7 @@ const IndexPage = () => (
             <div className="Grid__Column--50">
               <h4>Step 2.</h4>
               <h2>Synthesis (Coordinate)</h2>
-              <p>An unstoppable decentralized governance structure will guide our work, allowing us to coordinate in ways that foster collaboration and action.</p>
+              <p>An unstoppable decentralized governance structure will guide our work, allowing us to coordinate in new ways that foster collaboration and action.</p>
               <a href="https://nativeproject.one" className="large">Learn More</a>
             </div>
             <div className="Grid__Column--50">&nbsp;</div>
@@ -164,7 +164,19 @@ const IndexPage = () => (
               <h4>Step 3.</h4>
               <h2>Iterate (Create)</h2>
               <p>A sandbox of what is real and possible will keep us moving forward. Let's share, create, code, and play.</p>
-              <p>DOLO Wiki *Coming Soon</p>
+              <p className="large">DOLO Wiki *Coming Soon</p>
+            </div>
+            <div className="Grid__Column--50">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+      <div className="block challenge contact" id="contact">
+        <div className="contents">
+          <div className="Grid">
+            <div className="Grid__Column--50">
+              <h2>Let's work together</h2>
+              <p>If you're part of a project or team working on delivering value to the future of education, we want to help.</p>
+              <p className="large">Say <a href="mailto:hello@dolo.org">hello@dolo.org</a></p>
             </div>
             <div className="Grid__Column--50">&nbsp;</div>
           </div>

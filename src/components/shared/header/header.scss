@@ -34,11 +34,11 @@
 
 a.Header__link {
   text-decoration: none;
-  color: $od-light-purple;
+  color: black;
   letter-spacing: .1em;
   transition: all .15s linear;
   font-weight: 700;
   &:hover {
-    color: adjust-hue($od-light-purple, 30);
+    color: adjust-hue(black, 30);
   }
 }

@@ -27,7 +27,7 @@ a {
   text-decoration: underline;
 }
 
-a.large {font-size: 1.75em;}
+.large {font-size: 1.75em;}
 
 a.button {
   display: inline-block;
@@ -158,7 +158,7 @@ a.button {
 
 .step--1, .step--2, .step--3 {
   background-color: $od-yellow;
-  p {
+  p:not(.large) {
     font-size: 1.5em;
   }
 }
@@ -185,6 +185,7 @@ a.button {
       flex: 0 1 auto;
       margin: 0 auto;
     }
+    p { color: rgba(255,255,255,0.85); }
   }
 }
 
@@ -206,7 +207,7 @@ a.button {
 
 .Layout .block{
   @media (max-width: $grid) {
-    padding: 0px 25px;
+    padding: 25px 25px;
   }
 }
 
@@ -239,6 +240,7 @@ a.button {
     }
   }
   .block {
+    padding-top: 75px;
     h1 {
       font-size: 2em;
     }

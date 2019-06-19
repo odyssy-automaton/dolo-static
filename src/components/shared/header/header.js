@@ -17,6 +17,7 @@ const Header = ({ siteTitle }) => (
       <a className="Header__link" href="#organize">Organize</a>
       <a className="Header__link" href="#coordinate">Coordinate</a>
       <a className="Header__link" href="#create">Create</a>
+      <a className="Header__link" href="#contact">Contact</a>
     </div>
   </div>
 )
