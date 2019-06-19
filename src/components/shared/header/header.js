@@ -7,16 +7,17 @@ import doloLogo from '../../../images/dolo__brand--logo--standard.svg'
 const Header = ({ siteTitle }) => (
   <div>
     <div className="Header">
-      <h1 className="Header__title">
+      <div className="Header__title">
         <Link to="/">
           <img src={doloLogo} alt="DOLO"/>
         </Link>
-      </h1>
+      </div>
       <div className="Header__spacer"></div>
 
-      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://t.me/joinchat/IJqu9w9GgBScrKbU0bCRLA">Telegram</a>
-      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://nativeproject.one">Native</a>
-      <a className="Header__link" target="_blank" rel="noopener noreferrer" href="https://odyssy.io">Odyssy</a>
+      <a className="Header__link" href="#organize">Organize</a>
+      <a className="Header__link" href="#coordinate">Coordinate</a>
+      <a className="Header__link" href="#create">Create</a>
+      <a className="Header__link" href="#contact">Contact</a>
     </div>
   </div>
 )

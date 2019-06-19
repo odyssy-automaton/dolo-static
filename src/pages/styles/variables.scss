@@ -1,7 +1,47 @@
 // Variables
+
+//Typography
 @import url('https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,700,900');
 
 $base-font: 'Rubik', sans-serif;
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.25em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.85em;
+}
+
+p {
+    font-size: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    li {
+        padding: 10px 0px;
+        margin: 0px;
+    }
+}
 
 // Color Palette
 $od-primary: rgba(38,28,70,1);
@@ -16,5 +56,37 @@ $ntv-cream-dark: rgba(243, 242, 237, 1);
 $ntv-cream-darker: rgba(237,232,226,1);
 
 //Media Queries
+$grid: 1200px;
 $tablet: 768px;
 $phone: 420px;
+
+// Layout
+
+.Grid {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    &__Column {
+        display: flex;
+        flex-direction: column;
+        &--25 {
+            flex-basis: 25%;
+            @media (max-width: $tablet) {
+                flex-basis: 100%;
+            }
+        }
+        &--50 {
+            flex-basis: 50%;
+            @media (max-width: $tablet) {
+                flex-basis: 100%;
+            }
+        }
+        
+    }
+}
+
+
+
+
