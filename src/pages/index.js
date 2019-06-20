@@ -19,7 +19,13 @@ const IndexPage = () => (
         <div className="contents">
           <h2>Education as we know it is f***ed.</h2>
           <h2>But there is now a way forward.</h2>
-          <p>Schooling in its current form is under immense pressure to adapt to the rapid pace of knowledge, worldwide interdependence, the rate of technological change, and frustrations with quality. Further, rapid changes in our society mean that learners need a wide array of emergent skills, many of which are not fully understood or codified for learning today, much less tomorrow. The skills needed today change so fast that no education system can keep up with the constant need to reinvent how we work and live together. Therefore, schooling as a system -- conceived philosophically and operationalized through institutions and technologies -- must evolve to meet the demands of a new era where the fluid and rapid flow of information, rooted in goodness, is what matters most.</p>
+          <p>Schooling in its current form is under immense pressure to adapt to the rapid pace of knowledge, worldwide interdependence, the rate of technological change, and frustrations with quality. Further, rapid changes in our society mean that learners need a wide array of emergent skills, many of which are not fully understood or codified for learning today, much less tomorrow. Therefore, schooling as a system -- conceived philosophically and operationalized through institutions and technologies -- must evolve to meet the demands of a new era where the fluid and rapid flow of information, rooted in equity, is what matters most.</p>
+        </div>
+      </div>
+      <div className="block solution">
+        <div className="contents">
+          <h2>Radical changes in society demand that we reconsider – recode – our approach to teaching and learning.</h2>
+          <p>As once-dominant institutions that defined “education” continue to fragment, a recode to our way of thinking (a new philosophy) is needed.  We invite educators, technologists, researchers, economists and supporters to help us shape this philosophy, and to envision the technology that will move us into a world of open learning on a new dimension. This is but one way forward. This is DOLO.</p>
           <div className="MatrixGraphic">
             <img src={MatrixGraphic} alt="Education Matrix" />
           </div>
@@ -113,13 +119,7 @@ const IndexPage = () => (
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="block solution">
-        <div className="contents">
-          <h2>Radical changes in society demand that we reconsider – recode – our approach to teaching and learning.</h2>
-          <p>As once-dominant institutions that defined “education” continue to fragment, a recode to our way of thinking (a new philosophy) is needed.  We invite educators, technologists, researchers, economists and supporters to help us shape this philosophy, and to envision the technology that will move us into a world of open learning on a new dimension. This is but one way forward. This is DOLO.</p>
-          <p>DOLO is a call to bring together the best ideas into a Decentralized Open Learning Organism. DOLO is a network where educators and technologists come together to envision and iterate an education system, or platform, that mirrors the natural environment. What will that look like? We have no idea, but that's the point. All great ideas start with Genesis.</p>
+          <p>DOLO is a call to bring together the best ideas into a Decentralized Open Learning Organism. DOLO is a network where educators and technologists come together to envision and iterate an education system, or platform, that mirrors the natural environment. What will that look like? We have no idea, but that's the point. All great ideas start with <strong>Genesis</strong>.</p>
         </div>
       </div>
       <div className="block step--1" id="organize">
@@ -134,7 +134,7 @@ const IndexPage = () => (
                 Signal your support
               </h4>
                 <div className="TwitterShareButton"><TwitterShareButton
-                    options={{ text: 'I support a future of education that is smarter, faster, and accessible to all. Join us.', via: 'orgdolo', size: 'large' }}
+                    options={{ text: 'I support a future of education that is smarter, faster, and more inclusive for all. #yolodolo', via: 'orgdolo', size: 'large' }}
                     url={'https://dolo.org'}
                 />
                 </div>
